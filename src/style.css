@@ -1,3 +1,39 @@
 body {
-    background-color: aqua;
+    background-color: #f7f7f6;
+  }
+  
+.container {
+border: 1px solid white;
+margin: 20%;
+background-color: white;
+box-shadow: 5px 5px 20px;
 }
+
+.inputAdd {
+padding: 20px 0;
+width: 100%;
+border: none;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+}
+
+ul {
+padding-left: 0;
+list-style: none;
+}
+
+ul li {
+display: flex;
+padding-left: 5px;
+}
+
+button {
+text-align: center;
+background-color: #f7f7f6;
+padding: 15px;
+width: 100%;
+cursor: pointer;
+border: 1px solid black;
+margin-top: 10px;
+}
+  
