@@ -4,19 +4,19 @@ const ul = document.querySelector('ul');
 
 const chores = [
   {
-    description: 'Wash dishes',
-    completed: false,
-    index: 1,
+    description: '',
+    completed,
+    index,
   },
   {
-    description: 'Fix the car',
-    completed: false,
-    index: 2,
+    description: '',
+    completed,
+    index,
   },
   {
-    description: 'Clean bedroom',
-    completed: false,
-    index: 3,
+    description: '',
+    completed,
+    index,
   },
 ];
 
