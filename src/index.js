@@ -4,17 +4,17 @@ const ul = document.querySelector('ul');
 
 const chores = [
     {
-        description: 'wash dishes',
+        description: 'Wash dishes',
         completed: false,
         index: 1,
     },
     {
-        description: 'fix the car',
+        description: 'Fix the car',
         completed: false,
         index: 2,
     },
     {
-        description: 'clean bedroom',
+        description: 'Clean bedroom',
         completed: false,
         index: 3,
     }
