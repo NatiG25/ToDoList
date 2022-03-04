@@ -1,4 +1,5 @@
 import './style.css';
+import changeStatus from './modules/toggle';
 
 const ul = document.querySelector('ul');
 const input = document.querySelector('.inputAdd');
@@ -75,20 +76,11 @@ const editTask = (e) => {
 
 ul.addEventListener('focusout', editTask);
 
-const changeStatus = (index, arr) => {
-  if (arr.index === index && arr.completed === true) {
-      arr.completed = false;
-    } else console.log('hellp');
-  };
-
 const toggleToDo = (e) => {
-    
-    const element = e.target;
-    const targetID = parseInt(element.nextElementSibling.nextElementSibling.id, 10) + 1;
-    changeStatus(targetID, Localtasks);
-    // itemsInsertion();
-    populateStorage();
-  
+  const element = e.target;
+  const targetID = parseInt(element.nextElementSibling.nextElementSibling.id, 10) + 1;
+  changeStatus(targetID, Localtasks);
+  populateStorage();
 };
 
 ul.addEventListener('change', toggleToDo);
