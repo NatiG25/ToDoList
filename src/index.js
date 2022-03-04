@@ -87,12 +87,13 @@ const toggleToDo = (e) => {
 ul.addEventListener('change', toggleToDo);
 
 const clearTasks = () => {
-  Localtasks = Localtasks.filter(elem => elem.completed !== true)
+  Localtasks = Localtasks.filter((elem) => elem.completed !== true);
+  for (let i = 0; i < Localtasks.length; i += 1) {
+    Localtasks[i].index = i + 1;
+  }
   itemsInsertion();
   populateStorage();
-}
-
-btnClearAllCompleted.addEventListener('click', clearTasks);
+};
 
 const DisplayLocalTasks = () => {
   if (Localtasks.length !== 0) {
@@ -102,3 +103,4 @@ const DisplayLocalTasks = () => {
 };
 
 DisplayLocalTasks();
+btnClearAllCompleted.addEventListener('click', clearTasks);
