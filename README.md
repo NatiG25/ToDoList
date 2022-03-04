@@ -1,6 +1,8 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # to-do-list
 
-> Created a simple to do list.
+> Created a simple to do list, where the user can delete, edit, or add any number of tasks.
 
 
 ## Built With
@@ -29,7 +31,7 @@ Run `npm start` for development. Run `npm run build` for production.
 
 ## Live Demo
 
-[Live Demo Link](http://localhost:8080/)
+[Live Demo Link](http://localhost:8081/)
 
 ## Authors
 
@@ -45,7 +47,3 @@ Contributions, issues, and feature requests are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
