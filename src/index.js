@@ -3,6 +3,7 @@ import changeStatus from './modules/toggle';
 
 const ul = document.querySelector('ul');
 const input = document.querySelector('.inputAdd');
+const btnClearAllCompleted = document.querySelector('.clearBtn');
 
 class TaskObj {
   constructor(description, index) {
@@ -13,7 +14,7 @@ class TaskObj {
 }
 
 const parseTasks = JSON.parse(localStorage.getItem('tasks'));
-const Localtasks = parseTasks || [];
+let Localtasks = parseTasks || [];
 
 const populateStorage = () => {
   localStorage.setItem('tasks', JSON.stringify(Localtasks));
@@ -84,6 +85,14 @@ const toggleToDo = (e) => {
 };
 
 ul.addEventListener('change', toggleToDo);
+
+const clearTasks = () => {
+  Localtasks = Localtasks.filter(elem => elem.completed !== true)
+  itemsInsertion();
+  populateStorage();
+}
+
+btnClearAllCompleted.addEventListener('click', clearTasks);
 
 const DisplayLocalTasks = () => {
   if (Localtasks.length !== 0) {
