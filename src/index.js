@@ -1,7 +1,7 @@
 import './style.css';
-import Addtasks from './modules/add.js';
 import removeTasks from './modules/remove';
 import editTask from './modules/edit';
+import DisplayLocalTasks from './modules/displayLocalTasks';
 
 const ul = document.querySelector('ul');
 export const input = document.querySelector('.inputAdd');
@@ -31,12 +31,5 @@ export const itemsInsertion = () => {
 ul.addEventListener('click', removeTasks);
 
 ul.addEventListener('focusout', editTask);
-
-const DisplayLocalTasks = () => {
-  if(Localtasks.length !== 0) {
-    itemsInsertion();
-  }
-  Addtasks();
-};
 
 DisplayLocalTasks();
