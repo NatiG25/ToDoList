@@ -29,6 +29,10 @@ Run `npm start` for development. Run `npm run build` for production.
 - Run `npx stylelint "**/*.{css,scss}"` for CSS check
 - Run `npx stylelint "**/*.{css,scss}" --fix` to fix CSS errors if found.
 
+## Live Demo
+
+[Live Demo Link](https://natig25.github.io/ToDoList/)
+
 ## Authors
 
 👤 **Author1**
