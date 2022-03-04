@@ -1,6 +1,7 @@
 import './style.css';
 import Addtasks from './modules/add.js';
 import removeTasks from './modules/remove';
+import editTask from './modules/edit';
 
 const ul = document.querySelector('ul');
 export const input = document.querySelector('.inputAdd');
@@ -28,21 +29,6 @@ export const itemsInsertion = () => {
 }
 
 ul.addEventListener('click', removeTasks);
-
-const editTask = (e) => {
-  if (e.target.id == 'item-input') {
-  const element = e.target;
-  const targetID = parseInt(element.nextElementSibling.id, 10) + 1;
-  Localtasks.forEach(elem => {
-    if(elem.index === targetID) {
-      elem.description = element.value;
-    }
-  })
-  itemsInsertion();
-  populateStorage();
-  }
-  
-}
 
 ul.addEventListener('focusout', editTask);
 
