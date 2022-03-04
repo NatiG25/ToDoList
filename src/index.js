@@ -1,5 +1,6 @@
 import './style.css';
 import Addtasks from './modules/add.js';
+import removeTasks from './modules/remove';
 
 const ul = document.querySelector('ul');
 export const input = document.querySelector('.inputAdd');
@@ -23,25 +24,6 @@ export const itemsInsertion = () => {
   ul.innerHTML = '';
   for(let i = 0; i < Localtasks.length; i += 1) {
     ul.innerHTML += `<li><input type="checkbox"><input value="${Localtasks[i].description}" id="item-input"> <span id= "${Localtasks[i].index - 1}" class="trash-icon"> &#x1f5d1; </span></li>`;
-  }
-}
-
-
-
-const removeTasks = (e) => {
-  if(e.target.tagName === 'SPAN') {
-    const element = e.target;
-    const elementId = element.id;
-    element.parentNode.remove();
-    Localtasks.splice(elementId, 1);
-    Localtasks.forEach((elem) => {
-      if (elem.index > elementId) {
-        elem.index -= 1;
-      }
-    });
-    itemsInsertion();
-    populateStorage();
-  
   }
 }
 
