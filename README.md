@@ -2,7 +2,7 @@
 
 # to-do-list
 
-> Created a simple to do list, where the user can delete, edit, or add any number of tasks.
+> Created a simple to do list, where the user can delete, edit, or add any number of tasks. The page is also interactive.
 
 
 ## Built With
@@ -28,10 +28,6 @@ Run `npm start` for development. Run `npm run build` for production.
 - Run `npx eslint . --fix` to fix JS errors if found
 - Run `npx stylelint "**/*.{css,scss}"` for CSS check
 - Run `npx stylelint "**/*.{css,scss}" --fix` to fix CSS errors if found.
-
-## Live Demo
-
-[Live Demo Link](http://localhost:8081/)
 
 ## Authors
 
