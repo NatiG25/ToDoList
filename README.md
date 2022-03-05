@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# to-do-list
+# To-Do-List
 
 > Created a simple to do list, where the user can delete, edit, or add any number of tasks. The page is also interactive.
 
@@ -31,7 +31,8 @@ Run `npm start` for development. Run `npm run build` for production.
 
 ## Live Demo
 
-[Live Demo Link](https://natig25.github.io/ToDoList/)
+[Live Demo Link](https://natig25.github.io/ToDoList/
+)
 
 ## Authors
 
@@ -47,3 +48,7 @@ Contributions, issues, and feature requests are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
