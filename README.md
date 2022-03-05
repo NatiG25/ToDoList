@@ -2,7 +2,7 @@
 
 # To-Do-List
 
-> Created a simple to do list, where the user can delete, edit, or add any number of tasks.
+> Created a simple to do list, where the user can delete, edit, or add any number of tasks. The page is also interactive.
 
 
 ## Built With
