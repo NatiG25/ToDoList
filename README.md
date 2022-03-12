@@ -2,7 +2,7 @@
 
 # To-Do-List
 
-> Created a simple to do list, where the user can delete, edit, or add any number of tasks. The page is also interactive.
+> Created a simple to do list, where the user can delete, edit, or add any number of tasks. The page also saves the user's books inside the Localstorage.
 
 
 ## Built With
