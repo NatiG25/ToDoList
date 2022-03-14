@@ -2,7 +2,7 @@
 
 # To-Do-List
 
-> Created a simple to do list, where the user can delete, edit, or add any number of tasks. The page also saves the user's books inside the Localstorage.
+> This web application provides users a convenient way to keep track of their daily routine works. Users can add and remove tasks from the list of tasks they curate on the website.
 
 
 ## Built With
