@@ -9,6 +9,10 @@ body {
   box-shadow: 5px 5px 20px;
 }
 
+.header {
+  text-align: center;
+}
+
 .inputAdd {
   padding: 20px 0;
   width: 100%;
@@ -18,16 +22,12 @@ body {
 }
 
 ul {
-  padding-left: 0;
   list-style: none;
-}
-
-ul li {
   display: flex;
-  padding-left: 5px;
+  flex-direction: column;
 }
 
-button {
+.clearBtn {
   text-align: center;
   background-color: #f7f7f6;
   padding: 15px;
@@ -39,4 +39,5 @@ button {
 
 .trash-icon {
   cursor: pointer;
+  align-content: flex-end;
 }
