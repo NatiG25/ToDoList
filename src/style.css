@@ -27,10 +27,6 @@ ul {
   flex-direction: column;
 }
 
-ul li {
-  padding: 17px auto;
-}
-
 .clearBtn {
   text-align: center;
   background-color: #f7f7f6;
